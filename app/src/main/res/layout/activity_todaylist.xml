@@ -10,8 +10,8 @@
 
 
     <TextView
-        android:textSize="100px"
-        android:text= "TODO LIST"
+        android:textSize="65px"
+        android:text= "Your list for the day"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView"
@@ -19,23 +19,13 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="66dp" />
 
-    <Button
-        android:id="@+id/ButtonTL"
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_text"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:src="@drawable/Back"
 
-<Button
-    android:id="@+id/ButtonFL"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/buttonFL_text"
-    android:layout_below="@+id/ButtonTL"
-    android:layout_alignRight="@+id/ButtonTL"
-    android:layout_alignEnd="@+id/ButtonTL"
-    android:layout_marginTop="71dp" />
+
+        />
 
 
 

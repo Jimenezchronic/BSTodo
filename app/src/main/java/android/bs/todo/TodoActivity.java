@@ -6,11 +6,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 
 public class TodoActivity extends Activity {
 
     public Button Tlbutton;
+    public Button Flbutton;
 
 
 
@@ -18,14 +20,24 @@ public class TodoActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_todo);
-        Tlbutton = (Button) findViewById(R.id.Button);
+        Tlbutton = (Button) findViewById(R.id.ButtonTL);
+        Flbutton = (Button) findViewById(R.id.ButtonFL);
 
     Tlbutton.setOnClickListener( new View.OnClickListener(){
         @Override
         public void onClick(View view) {
-          
+            Toast toast = Toast.makeText(getApplication(),"the button has been text", Toast.LENGTH_SHORT);
+            toast.show();
         }
     } );
+
+        Flbutton.setOnClickListener( new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Toast toast = Toast.makeText(getApplication(),"The button works!", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        } );
     }
 
 
