@@ -1,6 +1,7 @@
 package android.bs.todo;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -26,8 +27,11 @@ public class TodoActivity extends Activity {
     Tlbutton.setOnClickListener( new View.OnClickListener(){
         @Override
         public void onClick(View view) {
-            Toast toast = Toast.makeText(getApplication(),"the button has been text", Toast.LENGTH_SHORT);
-            toast.show();
+            Intent intent = new Intent(getApplicationContext(), Todays_Activity.class);
+
+            startActivity(intent);
+
+
         }
     } );
 
