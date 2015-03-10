@@ -10,7 +10,8 @@ import android.widget.Toast;
 public class Todays_Activity extends Activity {
 
     public Button backButton;
-    public  Button buttonA;
+    public Button buttonA;
+
 
 
     @Override
@@ -30,18 +31,19 @@ public class Todays_Activity extends Activity {
             }
         } );
 
+
         buttonA = (Button) findViewById(R.id.AddB);
 
         buttonA.setOnClickListener( new View.OnClickListener(){
             @Override
             public void onClick(View view) {
 
-                Toast toast = Toast.makeText(getApplication(),"The button works!", Toast.LENGTH_SHORT);
-                toast.show();
+                Intent intent = new Intent(getApplicationContext(), Add_Activity.class);
+
+                startActivity(intent);
 
             }
         } );
-
 
 
     }
