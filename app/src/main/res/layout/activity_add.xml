@@ -3,6 +3,15 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
     <TextView
         android:text="Add"
         android:textSize="66px"
@@ -26,17 +35,100 @@
         />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_marginTop="50dp"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="55dp"
+        android:id="@+id/Tbox"
         android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="55dp"
+        android:id="@+id/Tbox2"
+        android:layout_below="@+id/Tbox"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="55dp"
+        android:id="@+id/Tbox3"
+        android:layout_below="@+id/Tbox2"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="55dp"
+        android:id="@+id/Tbox4"
+        android:layout_below="@+id/Tbox3"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="55dp"
+        android:id="@+id/Notes"
+        android:layout_below="@+id/Tbox4"
+        android:layout_centerHorizontal="true"
+        />
 
 
 
+            <TextView
+                android:text="Add"
+                android:textSize="26px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/textView2"
+                android:layout_above="@+id/Tbox4"
+                android:layout_toLeftOf="@+id/Tbox3"
+                android:layout_toStartOf="@+id/Tbox3" />
+
+            <TextView
+                android:text="Add"
+                android:textSize="26px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/textView3"
+                android:layout_above="@+id/Tbox2"
+                android:layout_toLeftOf="@+id/Tbox"
+                android:layout_toStartOf="@+id/Tbox" />
+
+            <TextView
+                android:text="Add"
+                android:textSize="26px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:layout_above="@+id/Tbox3"
+                android:layout_toLeftOf="@+id/Tbox2"
+                android:layout_toStartOf="@+id/Tbox2" />
+
+            <TextView
+                android:text="Add"
+                android:textSize="26px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"
+                android:layout_toStartOf="@+id/Tbox4"
+                android:layout_above="@+id/Notes"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignStart="@+id/textView2" />
 
 
+           </RelativeLayout>
+
+    </ScrollView>
 
 
 
