@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class Add_Activity extends Activity {
@@ -35,12 +35,21 @@ public class Add_Activity extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), Todays_Activity.class);
+                Intent outtent = new Intent(getApplicationContext(), Todays_Activity.class);
+                outtent.putExtra("Title",textB.getText());
+
 
                 startActivity(intent);
 
+                String extra = getIntent().getStringExtra("Title");
+                Toast toast = Toast.makeText(getApplication(),"ewoifnen", Toast.LENGTH_SHORT);
+                toast.show();
 
+                ;
             }
         } );
+
+
 
     }
 }

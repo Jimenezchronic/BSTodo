@@ -20,6 +20,8 @@ public class Todays_Activity extends Activity {
         setContentView(R.layout.activity_todaylist);
         backButton = (Button) findViewById(R.id.MenuB);
 
+
+
         backButton.setOnClickListener( new View.OnClickListener(){
             @Override
             public void onClick(View view) {
