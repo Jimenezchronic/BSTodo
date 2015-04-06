@@ -65,20 +65,12 @@
         android:layout_width="150dp"
         android:layout_height="35dp"
         android:layout_marginTop="55dp"
-        android:id="@+id/Tbox4"
+        android:id="@+id/Notes"
         android:layout_below="@+id/Tbox3"
         android:layout_centerHorizontal="true"
         />
 
 
-    <EditText
-        android:layout_width="150dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="55dp"
-        android:id="@+id/Notes"
-        android:layout_below="@+id/Tbox4"
-        android:layout_centerHorizontal="true"
-        />
 
 
 
@@ -89,9 +81,9 @@
                 android:layout_height="wrap_content"
 
                 android:id="@+id/textView2"
-                android:layout_above="@+id/Tbox4"
-                android:layout_toLeftOf="@+id/Tbox3"
-                android:layout_toStartOf="@+id/Tbox3" />
+                android:layout_toStartOf="@+id/Tbox3"
+                android:layout_alignBottom="@+id/Tbox3"
+                android:layout_toLeftOf="@+id/Tbox3" />
 
             <TextView
                 android:text="Title"
@@ -120,10 +112,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView5"
-                android:layout_toStartOf="@+id/Tbox4"
-                android:layout_above="@+id/Notes"
-                android:layout_alignLeft="@+id/textView2"
-                android:layout_alignStart="@+id/textView2" />
+                android:layout_toStartOf="@+id/Notes"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/Notes" />
 
 
            </RelativeLayout>

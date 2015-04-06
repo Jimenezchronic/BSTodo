@@ -28,21 +28,22 @@ public class Add_Activity extends Activity {
         textB = (EditText) findViewById(R.id.Tbox);
         textB2 = (EditText) findViewById(R.id.Tbox2);
         textB3 = (EditText) findViewById(R.id.Tbox3);
-        textB4 = (EditText) findViewById(R.id.Tbox4);
         noteB = (EditText) findViewById(R.id.Notes);
 
         save.setOnClickListener( new View.OnClickListener(){
             @Override
             public void onClick(View view) {
+
                 Intent intent = new Intent(getApplicationContext(), Todays_Activity.class);
-                Intent outtent = new Intent(getApplicationContext(), Todays_Activity.class);
-                outtent.putExtra("Title",textB.getText());
+                intent.putExtra("Title",textB.getText().toString());
+                intent.putExtra("Task",textB2.getText().toString());
+                intent.putExtra("Date/Time",textB3.getText().toString());
+                intent.putExtra("Notes",noteB.getText().toString());
 
 
                 startActivity(intent);
 
-                String extra = getIntent().getStringExtra("Title");
-                Toast toast = Toast.makeText(getApplication(),"ewoifnen", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplication(),"Your List Has Been Created.", Toast.LENGTH_SHORT);
                 toast.show();
 
                 ;

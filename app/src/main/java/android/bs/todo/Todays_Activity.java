@@ -11,8 +11,7 @@ public class Todays_Activity extends Activity {
 
     public Button backButton;
     public Button buttonA;
-
-
+    private ToDolist task;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +19,13 @@ public class Todays_Activity extends Activity {
         setContentView(R.layout.activity_todaylist);
         backButton = (Button) findViewById(R.id.MenuB);
 
+        String extra = getIntent().getStringExtra("Title");
+        String extra2 = getIntent().getStringExtra("Task");
+        String extra3 = getIntent().getStringExtra("Date/Time");
+        String extra4 = getIntent().getStringExtra("Notes");
 
+        task = new ToDolist(extra, extra2, extra3, extra4);
+        ToDoArray.get().add(task);
 
         backButton.setOnClickListener( new View.OnClickListener(){
             @Override
